@@ -1,0 +1,123 @@
+## 1. HTML Document Structure
+
+Every HTML page follows a **hierarchy** — like a family tree.
+
+```html
+<!DOCTYPE html>   → Defines HTML version (HTML5 here).
+<html>            → Root of the page
+  <head>          → Metadata (info *about* the page, not visible directly)
+  <body>          → Actual content (what user sees)
+</html>
+```
+
+👉 Think of it as:
+
+- **Head** = “Backstage” (title, SEO, CSS, JS).
+- **Body** = “Stage” (the visible performance).
+
+If you miss proper structure, your page may still run, but it will **break in SEO, 
+accessibility, or future scaling**.
+
+---
+
+## 🔹 2. Headings (`<h1>` to `<h6>`)
+
+Headings give **hierarchy to content**.
+
+- `<h1>` = Most important heading.
+- `<h6>` = Least important heading.
+
+👉 Rules & Best Practices:
+
+- Use only **one `<h1>` per page** → It defines the main topic.
+- Sub-sections should use `<h2>`, `<h3>`, etc. (like chapters and subchapters).
+- Don’t use headings for styling (use CSS for size). Use them **only for meaning**.
+
+👉 Real-life analogy:
+
+Think of a **book**:
+
+- Title → `<h1>`
+- Chapter name → `<h2>`
+- Section → `<h3>`
+- Subsection → `<h4>`
+
+This structure makes content **SEO-friendly** and easier for screen readers.
+
+---
+
+## 🔹 3. Paragraphs (`<p>`)
+
+- A `<p>` defines a **block of text**.
+- Browsers automatically add **margin (spacing)** before and after paragraphs.
+- You should never replace `<p>` with `<br>` (line break) for spacing.
+
+👉 Why important?
+
+Because `<p>` is semantic → search engines and accessibility tools understand it 
+as **paragraphs of meaning**, not just random text.
+
+---
+
+## 🔹 4. Text Formatting Tags
+
+HTML provides **inline tags** to style or add meaning to text.
+
+### Common Formatting Tags:
+
+- `<b>` → Bold (just makes text thick, no meaning).
+- `<strong>` → Important (semantic emphasis, better for SEO).
+- `<i>` → Italic (slanted text, visual only).
+- `<em>` → Emphasis (semantic, conveys stress/importance).
+- `<u>` → Underline.
+- `<mark>` → Highlighted text (yellow by default).
+- `<small>` → Smaller text.
+- `<sup>` → Superscript (e.g., X²).
+- `<sub>` → Subscript (e.g., H₂O).
+- `<del>` → Deleted/strikethrough text.
+- `<ins>` → Inserted/added text (often underlined).
+
+👉 Golden Rule:
+
+Use **semantic tags** (`<strong>`, `<em>`) over presentational ones (`<b>`, `<i>`).
+
+Because **semantic tags carry meaning**, which helps SEO and accessibility.
+
+---
+
+## 🔹 5. Real-Life Example of Proper Use
+
+Imagine you’re writing a **news article** on a website:
+
+- Title of news → `<h1>`
+- Subtitle (category: “Sports”) → `<h2>`
+- Article text → `<p>`
+- Important quote → `<strong>`
+- Date published → `<small>`
+- Player’s chemical formula for sports drink → H<sub>2</sub>O
+
+👉 This makes content not only look good but also **organized and meaningful** to Google, 
+screen readers, and users.
+
+---
+
+## 🔹 6. Common Mistakes Beginners Make
+
+❌ Using `<br>` everywhere instead of `<p>`.
+
+❌ Using `<h1>` multiple times just for bigger fonts.
+
+❌ Using `<b>` everywhere instead of `<strong>`.
+
+❌ Using headings for styling instead of structure.
+
+👉 Fix: **Always use tags for their purpose, not for looks.** Use CSS for styling.
+
+---
+
+✅ **Summary (Quick Recall)**
+
+- **Structure**: `<head>` (meta info), `<body>` (visible content).
+- **Headings**: `<h1>` to `<h6>`, one `<h1>` only.
+- **Paragraphs**: `<p>` = blocks of text.
+- **Text Formatting**: Use semantic tags (`<strong>`, `<em>`) for meaning, not just looks.

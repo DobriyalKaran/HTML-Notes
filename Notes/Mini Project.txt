@@ -1,0 +1,100 @@
+# Mini Project Idea → **Personal Portfolio (Basic Version)**
+
+---
+
+## 🔹 Requirements for the Project
+
+1. **Page Structure**
+    - Title: "My Portfolio"
+    - A heading (`<h1>`) with student’s name.
+    - A paragraph introducing themselves.
+2. **Navigation Menu** (using links `<a>` and list `<ul>`)
+    - Home
+    - About Me
+    - Skills
+    - Contact
+3. **About Me Section**
+    - A heading (`<h2>`)
+    - Few lines in paragraph form.
+4. **Skills Section**
+    - Use an **unordered list** for skills.
+    - Example: HTML, CSS, JavaScript.
+5. **Experience Section**
+    - Use an **ordered list** (timeline of steps or jobs).
+6. **Contact Section**
+    - Add an **email link** (`mailto:`).
+    - Add a **download link** (fake CV file like `resume.pdf`).
+7. **Extra Challenge** (Optional)
+    - Add a **jump link** in nav → "Back to Top".
+
+---
+
+- **Answer**
+    
+    ```html
+    <!DOCTYPE html> 
+    <head> 
+      <title>My Portfolio</title>
+    </head>
+    <body>
+    
+      <!-- Navigation -->
+      <header>
+        <h1>John Doe - Portfolio</h1>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <hr>
+      </header>
+    
+      <!-- Home -->
+      <section id="home">
+        <h2>Welcome!</h2>
+        <p>Hello! I’m John Doe, a beginner web developer learning HTML and web design.</p>
+      </section>
+    
+      <!-- About -->
+      <section id="about">
+        <h2>About Me</h2>
+        <p>I am passionate about coding and building creative projects. I enjoy solving 
+		real-world problems through technology.</p>
+      </section>
+    
+      <!-- Skills -->
+      <section id="skills">
+        <h2>My Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+    
+      <!-- Experience -->
+      <section id="experience">
+        <h2>My Journey</h2>
+        <ol>
+          <li>Started learning coding in 2024</li>
+          <li>Built small HTML projects</li>
+          <li>Now practicing full-stack development</li>
+        </ol>
+      </section>
+    
+      <!-- Contact -->
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:johndoe@example.com">Send me an Email</a></p>
+        <p><a href="resume.pdf" download>Download My Resume</a></p>
+        <p><a href="#home">Back to Top</a></p>
+      </section>
+    
+    </body>
+    </html>
+    
+    ```
